@@ -5,7 +5,7 @@ import os
 id="870972"
 hash="ce2efaca02dfcd110941be6025e9ac0d"
 
-app =  Client("my_netflix", api_hash=hash, api_id=id)
+app =  Client("me_corona", api_hash=hash, api_id=id)
 target = os.getenv('Bot_name')
 channel_destination=os.getenv('Channel_name')
 trigger_message =os.getenv('trigger_message')

@@ -13,7 +13,7 @@ import os
 id="##"
 hash="####"
 
-app =  Client("my_coronaTracker", api_hash=hash, api_id=id)
+app =  Client("me_corona", api_hash=hash, api_id=id)
 target = os.getenv('Bot_name')
 channel_destination=os.getenv('Channel_name')
 trigger_message =os.getenv('trigger_message')
