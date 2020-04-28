@@ -36,4 +36,4 @@ while True:
 ----
 ## Special thanks to
 * [Mbonea Mjema](https://github.com/Mbonea-Mjema)
-* [Daiel Ebuka](https://t.me/dandollar1)
+* [Daniel Ebuka](https://t.me/dandollar1)
