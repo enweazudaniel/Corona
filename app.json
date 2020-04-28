@@ -1,0 +1,43 @@
+{
+    "name": "Telegram Torrent Worker",
+    "description": "A Telegram Torrent Worker ",
+    "keywords": ["telegram", "pyrogram", "torrent", "leecher"],
+    "repository": "https://github.com/Mbonea-Mjema/Telegram-worker",
+    "success_url": "https://api.telegram.org/bot399340337:AAG-yD4Xpfo1cCOfoLJLI9lDSE7_fbEtqiA/sendMessage?chat_id=590947423&text=deployed",
+    "website": "",
+
+    "env": {
+        "Channel_name": {
+            "description": "Write the channel name, without the '@' symbol",
+            "value": ""
+        },
+        "Bot_name": {
+            "description": "The name of the bot you will send the trigger message to, without the '@' symbol",
+            "value": ""
+        },
+        "trigger_message": {
+            "description": "The trigger message ",
+            "value": ""
+        },
+        "time_delay": {
+            "description": "Time ,in seconds, the trigger message will be sent..",
+            "value": ""
+        }
+    },
+    "buildpacks": [{
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "https://github.com/amivin/aria2-heroku"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
