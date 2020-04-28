@@ -2,7 +2,7 @@
 # Telegram Corona UserBot 🤖
 
    
-    The bot relays  messages from corona bots to a channel
+    The bot relays  messages from Corona bots to a channel
 
 
 ``` python
