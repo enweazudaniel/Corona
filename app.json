@@ -15,7 +15,7 @@
             "description": "The name of the bot you will send the trigger message to, without the '@' symbol",
             "value": ""
         },
-        "trigger_message": {
+        "trigger_messages": {
             "description": "The trigger messages separated by comma eg Nigeria,Tanzania,USA",
             "value": ""
         },
