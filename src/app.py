@@ -13,7 +13,7 @@ time_delay = int(os.getenv('time_delay'))
 
 @app.on_message(filters=Filters.bot)
 def catch_every(client:Client,message:Message):
-  if message.from_user == target:
+  if message.chat.username == target:
     app.send_message(channel_destination,message.text)
 
 app.start()
