@@ -16,7 +16,7 @@
             "value": ""
         },
         "trigger_message": {
-            "description": "The trigger message ",
+            "description": "The trigger messages separated by comma eg Nigeria,Tanzania,USA",
             "value": ""
         },
         "time_delay": {

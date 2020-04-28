@@ -8,16 +8,19 @@ hash="ce2efaca02dfcd110941be6025e9ac0d"
 app =  Client("me_corona", api_hash=hash, api_id=id)
 target = os.getenv('Bot_name')
 channel_destination=os.getenv('Channel_name')
-trigger_message =os.getenv('trigger_message')
+trigger_messages = [i for i in os.getenv('trigger_messages').split(",")] 
 time_delay = int(os.getenv('time_delay'))
 
-@app.on_message()
+@app.on_message(filters=Filters.bot)
 def catch_every(client:Client,message:Message):
-  app.send_message(channel_destination,message.text)
+  if message.from_user == target:
+    app.send_message(channel_destination,message.text)
 
 app.start()
 
 seconds = time_delay
 while True:
   time.sleep(seconds)
-  app.send_message(target,'Tanzania')
+  for trigger in trigger_messages:
+    app.send_message(target,trigger)
+    time.sleep(2)
