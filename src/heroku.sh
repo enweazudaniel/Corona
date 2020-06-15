@@ -1,3 +1,3 @@
 #!/bin/bash
-cd $PWD/src
+cd "$PWD"/src
 python app.py
