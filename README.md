@@ -32,8 +32,6 @@
 ----
 ## Special thanks to
 
+  * [Mbonea Mjema](https://github.com/Mbonea-Mjema)
 
-* [Mbonea Mjema](https://github.com/Mbonea-Mjema)
-
-
-* [Daniel Ebuka](https://t.me/dandollar1)
+  * [Daniel Ebuka](https://t.me/dandollar1)
