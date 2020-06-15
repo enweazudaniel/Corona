@@ -2,8 +2,8 @@ from pyrogram import Client,Filters,Message
 import time
 import os
 
-id="870972"
-hash="ce2efaca02dfcd110941be6025e9ac0d"
+%rid="870972"
+%rhash="ce2efaca02dfcd110941be6025e9ac0d"
 
 app =  Client("me_Corona", api_hash=hash, api_id=id)
 target = os.getenv('Bot_name')
